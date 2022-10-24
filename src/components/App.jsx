@@ -1,18 +1,25 @@
-// import React from "react";
-// import Footer from "./Footer";
+import notes from "../notes";
 import Footer from "./Footer";
 import Header from "./Header";
 import Note from "./Note";
-// import Note from "./Note";
+
+console.log(notes)
+
+
+
 
 function App() {
   return (
     <div >
     <Header />
-    <Note />
-    <Footer />
-     
-    </div>
+      {notes.map((noteItem) => (
+      <Note 
+      title={noteItem.title}
+      content={noteItem.content} 
+      />
+      ))}
+     <Footer />
+   </div>
   );
 }
 

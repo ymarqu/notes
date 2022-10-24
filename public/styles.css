@@ -38,11 +38,14 @@ footer{
     border-radius: 7px;
     box-shadow: 0 2px 5px #ccc;
     padding: 10px;
-    width: 240px;}
+    width: 240px;
+    float: left;
+    margin: 1rem;
+    }
   .note h1 {
     color: #E26868;
     font-size: 1.1em;
-    margin-bottom: 6px;
+    margin: 6px;
   }
   .note p {
     font-size: 1.1em;
